@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/assembly/pom.xml" />
+        <option value="$PROJECT_DIR$/common/kvstore/pom.xml" />
+        <option value="$PROJECT_DIR$/common/network-common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/network-shuffle/pom.xml" />
+        <option value="$PROJECT_DIR$/common/sketch/pom.xml" />
+        <option value="$PROJECT_DIR$/common/tags/pom.xml" />
+        <option value="$PROJECT_DIR$/common/unsafe/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/examples/pom.xml" />
+        <option value="$PROJECT_DIR$/external/avro/pom.xml" />
+        <option value="$PROJECT_DIR$/external/kafka-0-10-assembly/pom.xml" />
+        <option value="$PROJECT_DIR$/external/kafka-0-10-sql/pom.xml" />
+        <option value="$PROJECT_DIR$/external/kafka-0-10-token-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/external/kafka-0-10/pom.xml" />
+        <option value="$PROJECT_DIR$/graphx/pom.xml" />
+        <option value="$PROJECT_DIR$/launcher/pom.xml" />
+        <option value="$PROJECT_DIR$/mllib-local/pom.xml" />
+        <option value="$PROJECT_DIR$/mllib/pom.xml" />
+        <option value="$PROJECT_DIR$/repl/pom.xml" />
+        <option value="$PROJECT_DIR$/sql/catalyst/pom.xml" />
+        <option value="$PROJECT_DIR$/sql/core/pom.xml" />
+        <option value="$PROJECT_DIR$/sql/hive/pom.xml" />
+        <option value="$PROJECT_DIR$/streaming/pom.xml" />
+        <option value="$PROJECT_DIR$/tools/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
