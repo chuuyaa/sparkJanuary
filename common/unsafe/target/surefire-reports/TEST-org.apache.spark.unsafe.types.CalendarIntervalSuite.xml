@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.apache.spark.unsafe.types.CalendarIntervalSuite" time="0.011" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="log4j.configuration" value="file:src/test/resources/log4j.properties"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\User\sparkJanuary\common\unsafe\target\scala-2.12\test-classes;C:\Users\User\sparkJanuary\common\unsafe\target\scala-2.12\classes;C:\Users\User\sparkJanuary\common\tags\target\spark-tags_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.12.10\scala-library-2.12.10.jar;C:\Users\User\sparkJanuary\common\tags\target\spark-tags_2.12-3.0.1-tests.jar;C:\Users\User\.m2\repository\com\twitter\chill_2.12\0.9.5\chill_2.12-0.9.5.jar;C:\Users\User\.m2\repository\com\twitter\chill-java\0.9.5\chill-java-0.9.5.jar;C:\Users\User\.m2\repository\com\esotericsoftware\kryo-shaded\4.0.2\kryo-shaded-4.0.2.jar;C:\Users\User\.m2\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;C:\Users\User\.m2\repository\org\apache\xbean\xbean-asm7-shaded\4.15\xbean-asm7-shaded-4.15.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\14.0.1\guava-14.0.1.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\User\.m2\repository\org\mockito\mockito-core\3.1.0\mockito-core-3.1.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\User\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\User\.m2\repository\org\scalacheck\scalacheck_2.12\1.14.2\scalacheck_2.12-1.14.2.jar;C:\Users\User\.m2\repository\org\scala-sbt\test-interface\1.0\test-interface-1.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-text\1.6\commons-text-1.6.jar;C:\Users\User\.m2\repository\org\spark-project\spark\unused\1.0.0\unused-1.0.0.jar;C:\Users\User\.m2\repository\org\scalatest\scalatest_2.12\3.0.8\scalatest_2.12-3.0.8.jar;C:\Users\User\.m2\repository\org\scalactic\scalactic_2.12\3.0.8\scalactic_2.12-3.0.8.jar;C:\Users\User\.m2\repository\org\scala-lang\scala-reflect\2.12.10\scala-reflect-2.12.10.jar;C:\Users\User\.m2\repository\org\scala-lang\modules\scala-xml_2.12\1.2.0\scala-xml_2.12-1.2.0.jar;C:\Users\User\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\com\novocode\junit-interface\0.11\junit-interface-0.11.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="spark.memory.debugFill" value="true"/>
+    <property name="spark.master.rest.enabled" value="false"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Singapore"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire5591239413760971782\surefirebooter4670485396183534712.jar C:\Users\User\AppData\Local\Temp\surefire5591239413760971782 2021-02-10T23-55-28_184-jvmRun1 surefire6734099747684328581tmp surefire_51728552772718631217tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\sparkJanuary\common\unsafe\target\scala-2.12\test-classes;C:\Users\User\sparkJanuary\common\unsafe\target\scala-2.12\classes;C:\Users\User\sparkJanuary\common\tags\target\spark-tags_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.12.10\scala-library-2.12.10.jar;C:\Users\User\sparkJanuary\common\tags\target\spark-tags_2.12-3.0.1-tests.jar;C:\Users\User\.m2\repository\com\twitter\chill_2.12\0.9.5\chill_2.12-0.9.5.jar;C:\Users\User\.m2\repository\com\twitter\chill-java\0.9.5\chill-java-0.9.5.jar;C:\Users\User\.m2\repository\com\esotericsoftware\kryo-shaded\4.0.2\kryo-shaded-4.0.2.jar;C:\Users\User\.m2\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;C:\Users\User\.m2\repository\org\apache\xbean\xbean-asm7-shaded\4.15\xbean-asm7-shaded-4.15.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\14.0.1\guava-14.0.1.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\User\.m2\repository\org\mockito\mockito-core\3.1.0\mockito-core-3.1.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\User\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\User\.m2\repository\org\scalacheck\scalacheck_2.12\1.14.2\scalacheck_2.12-1.14.2.jar;C:\Users\User\.m2\repository\org\scala-sbt\test-interface\1.0\test-interface-1.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-text\1.6\commons-text-1.6.jar;C:\Users\User\.m2\repository\org\spark-project\spark\unused\1.0.0\unused-1.0.0.jar;C:\Users\User\.m2\repository\org\scalatest\scalatest_2.12\3.0.8\scalatest_2.12-3.0.8.jar;C:\Users\User\.m2\repository\org\scalactic\scalactic_2.12\3.0.8\scalactic_2.12-3.0.8.jar;C:\Users\User\.m2\repository\org\scala-lang\scala-reflect\2.12.10\scala-reflect-2.12.10.jar;C:\Users\User\.m2\repository\org\scala-lang\modules\scala-xml_2.12\1.2.0\scala-xml_2.12-1.2.0.jar;C:\Users\User\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\com\novocode\junit-interface\0.11\junit-interface-0.11.jar;"/>
+    <property name="io.netty.tryReflectionSetAccessible" value="true"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Progra~1\Java\jdk1.8.0_221\jre"/>
+    <property name="basedir" value="C:\Users\User\sparkJanuary\common\unsafe"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="spark.unsafe.exceptionOnMemoryLeak" value="true"/>
+    <property name="derby.system.durability" value="test"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire5591239413760971782\surefirebooter4670485396183534712.jar"/>
+    <property name="spark.ui.showConsoleProgress" value="false"/>
+    <property name="sun.boot.class.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="spark.testing" value="1"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="User"/>
+    <property name="test.src.tables" value="src"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\sparkJanuary\common\unsafe\target/tmp"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="C:\Users\User\sparkJanuary\common\unsafe"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk1.8.0_221\bin;C:\hadoop-3.1.2\sbin;C:\hadoop-3.1.2\bin;C:\Progra~1\Java\jdk1.8.0_221;C:\Program Files\PuTTY\;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\User\sparkJanuary\bin;C:\hadoop-3.1.2;C:\hadoop-3.1.2\lib\native;C:\Progra~1\apache-maven-3.6.3\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Rtools 4.0;C:\Users\User\Anaconda3\envs\kublasean\Lib\R\bin\x64\Rgui.exe;C:\Users\User\sparkJanuary\python;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="spark.test.home" value="C:\Users\User\sparkJanuary"/>
+    <property name="spark.ui.enabled" value="false"/>
+  </properties>
+  <testcase name="periodAndDurationTest" classname="org.apache.spark.unsafe.types.CalendarIntervalSuite" time="0"/>
+  <testcase name="equalsTest" classname="org.apache.spark.unsafe.types.CalendarIntervalSuite" time="0"/>
+  <testcase name="toStringTest" classname="org.apache.spark.unsafe.types.CalendarIntervalSuite" time="0"/>
+</testsuite>

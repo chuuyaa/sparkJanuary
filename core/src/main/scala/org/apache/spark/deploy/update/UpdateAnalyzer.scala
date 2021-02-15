@@ -11,8 +11,8 @@ class UpdateAnalyzer {
     val updatedArgs = new ArrayBuffer[String]()
     val sparkConf = args.toSparkConf()
 
-    args.driverMemory = "1g"
-    args.executorCores = "3"
+    //args.driverMemory = "1g"
+    //args.executorCores = "3"
     sparkConf.set("spark.driver.core", "2")
     sparkConf.setMaster("local[2]")
 

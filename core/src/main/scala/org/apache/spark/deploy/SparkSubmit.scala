@@ -24,12 +24,10 @@ import java.security.PrivilegedExceptionAction
 import java.text.ParseException
 import java.util.{ServiceLoader, UUID}
 import java.util.jar.JarInputStream
-
 import scala.annotation.tailrec
 import scala.collection.JavaConverters._
 import scala.collection.mutable.ArrayBuffer
 import scala.util.{Failure, Properties, Success, Try}
-
 import org.apache.commons.io.FilenameUtils
 import org.apache.commons.lang3.StringUtils
 import org.apache.hadoop.conf.{Configuration => HadoopConfiguration}
@@ -47,7 +45,6 @@ import org.apache.ivy.core.settings.IvySettings
 import org.apache.ivy.plugins.matcher.GlobPatternMatcher
 import org.apache.ivy.plugins.repository.file.FileRepository
 import org.apache.ivy.plugins.resolver.{ChainResolver, FileSystemResolver, IBiblioResolver}
-
 import org.apache.spark._
 import org.apache.spark.api.r.RUtils
 import org.apache.spark.deploy.rest._
@@ -56,7 +53,9 @@ import org.apache.spark.internal.config._
 import org.apache.spark.internal.config.UI._
 import org.apache.spark.launcher.SparkLauncher
 import org.apache.spark.util._
-
+import org.apache.spark.deploy.collect.ArgumentAnalyzer
+import org.apache.spark.deploy.decisionmaking.theBrain
+import org.apache.spark.deploy.update.UpdateAnalyzer
 /**
  * Whether to submit, kill, or request the status of an application.
  * The latter two operations are currently supported only for standalone and Mesos cluster modes.
@@ -84,7 +83,7 @@ private[spark] class SparkSubmit extends Logging {
 
     val appArgs = parseArguments(args)
     if (appArgs.verbose) {
-      logInfo(appArgs.toString)
+      //logInfo(appArgs.toString)
     }
     appArgs.action match {
       case SparkSubmitAction.SUBMIT => submit(appArgs, uninitLog)
@@ -224,8 +223,10 @@ private[spark] class SparkSubmit extends Logging {
     // Return values
     val childArgs = new ArrayBuffer[String]()
     val childClasspath = new ArrayBuffer[String]()
+    args.driverMemory = "1g"
     val sparkConf = args.toSparkConf()
     var childMainClass = ""
+    logInfo("[CUYATEST] spark initial DRIVER MEMORY " + sparkConf.get(DRIVER_MEMORY))
 
     // Set the cluster manager
     val clusterManager: Int = args.master match {
@@ -238,7 +239,7 @@ private[spark] class SparkSubmit extends Logging {
         error("Master must either be yarn or start with spark, mesos, k8s, or local")
         -1
     }
-
+    logInfo("[CUYATEST] the cluster manager is " + clusterManager)
     // Set the deploy mode; default is client mode
     var deployMode: Int = args.deployMode match {
       case "client" | null => CLIENT
@@ -621,6 +622,10 @@ private[spark] class SparkSubmit extends Logging {
       OptionAssigner(localJars, ALL_CLUSTER_MGRS, CLIENT, confKey = "spark.repl.local.jars")
     )
 
+    logInfo("[CUYATEST] BEFORE The driver memory : "+sparkConf.get(DRIVER_MEMORY))
+    logInfo("[CUYATEST] The executor core : "+sparkConf.get(EXECUTOR_CORES))
+    logInfo("[CUYATEST] The driver core : "+sparkConf.get(DRIVER_CORES))
+
     // In client mode, launch the application main class directly
     // In addition, add the main application jar and any added jars (if any) to the classpath
     if (deployMode == CLIENT) {
@@ -697,6 +702,8 @@ private[spark] class SparkSubmit extends Logging {
         childArgs ++= args.childArgs
       }
     }
+    val tb = new theBrain()
+    tb.theBrainAnalyzing(args, clusterManager)
 
     // Let YARN know it's a pyspark app, so it distributes needed libraries.
     if (clusterManager == YARN) {
@@ -868,6 +875,8 @@ private[spark] class SparkSubmit extends Logging {
    * running cluster deploy mode or python applications.
    */
   private def runMain(args: SparkSubmitArguments, uninitLog: Boolean): Unit = {
+    val analyzer = new ArgumentAnalyzer()
+    analyzer.analyzeArgument(args.master, args.deployMode, args.executorMemory, args.executorCores)
     val (childArgs, childClasspath, sparkConf, childMainClass) = prepareSubmitEnvironment(args)
     // Let the main class re-initialize the logging system once it starts.
     if (uninitLog) {
@@ -909,8 +918,10 @@ private[spark] class SparkSubmit extends Logging {
     }
 
     val app: SparkApplication = if (classOf[SparkApplication].isAssignableFrom(mainClass)) {
+      logInfo("[CUYATEST] masuk kat if isAssignableFrom")
       mainClass.getConstructor().newInstance().asInstanceOf[SparkApplication]
     } else {
+      logInfo("[CUYATEST] masuk kat else")
       new JavaMainApplication(mainClass)
     }
 
@@ -925,6 +936,12 @@ private[spark] class SparkSubmit extends Logging {
     }
 
     try {
+      logInfo("[CUYATEST] Your child args : "+childArgs.foreach(println))
+      logInfo("[CUYATEST] The driver memory : "+sparkConf.get(DRIVER_MEMORY))
+      logInfo("[CUYATEST] The executor core : "+sparkConf.get(EXECUTOR_CORES))
+      logInfo("[CUYATEST] The driver core : "+sparkConf.get(DRIVER_CORES))
+
+
       app.start(childArgs.toArray, sparkConf)
     } catch {
       case t: Throwable =>
@@ -953,12 +970,12 @@ private[spark] object InProcessSparkSubmit {
 object SparkSubmit extends CommandLineUtils with Logging {
 
   // Cluster managers
-  private val YARN = 1
-  private val STANDALONE = 2
-  private val MESOS = 4
-  private val LOCAL = 8
-  private val KUBERNETES = 16
-  private val ALL_CLUSTER_MGRS = YARN | STANDALONE | MESOS | LOCAL | KUBERNETES
+  val YARN = 1
+  val STANDALONE = 2
+  val MESOS = 4
+  val LOCAL = 8
+  val KUBERNETES = 16
+  val ALL_CLUSTER_MGRS = YARN | STANDALONE | MESOS | LOCAL | KUBERNETES
 
   // Deploy modes
   private val CLIENT = 1

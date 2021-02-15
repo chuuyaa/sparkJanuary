@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.spark.launcher.ChildProcAppHandleSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.101 s <<< FAILURE! - in org.apache.spark.launcher.ChildProcAppHandleSuite
+org.apache.spark.launcher.ChildProcAppHandleSuite  Time elapsed: 1.101 s  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at org.apache.spark.launcher.ChildProcAppHandleSuite.setupClass(ChildProcAppHandleSuite.java:65)
+
