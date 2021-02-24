@@ -1,0 +1,362 @@
+21/02/21 22:50:03.625 ScalaTest-main-running-KafkaHadoopDelegationTokenManagerSuite INFO KafkaHadoopDelegationTokenManagerSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaHadoopDelegationTokenManagerSuite: 'default configuration' =====
+
+21/02/21 22:50:08.428 ScalaTest-main-running-KafkaHadoopDelegationTokenManagerSuite INFO KafkaHadoopDelegationTokenManagerSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaHadoopDelegationTokenManagerSuite: 'default configuration' =====
+
+21/02/21 22:50:08.489 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'set should always set value' =====
+
+21/02/21 22:50:08.502 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'set should always set value' =====
+
+21/02/21 22:50:08.671 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setIfUnset without existing key should set value' =====
+
+21/02/21 22:50:08.671 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setIfUnset without existing key should set value' =====
+
+21/02/21 22:50:08.672 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setIfUnset with existing key should not set value' =====
+
+21/02/21 22:50:08.675 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setIfUnset with existing key should not set value' =====
+
+21/02/21 22:50:08.676 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with global security should not set values' =====
+
+21/02/21 22:50:10.048 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with global security should not set values' =====
+
+21/02/21 22:50:10.049 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with token should set values' =====
+
+21/02/21 22:50:10.111 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with token should set values' =====
+
+21/02/21 22:50:10.113 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with token should not override user-defined protocol' =====
+
+21/02/21 22:50:10.156 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with token should not override user-defined protocol' =====
+
+21/02/21 22:50:10.157 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with invalid mechanism should throw exception' =====
+
+21/02/21 22:50:10.213 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded with invalid mechanism should throw exception' =====
+
+21/02/21 22:50:10.215 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded without security should not set values' =====
+
+21/02/21 22:50:10.247 ScalaTest-main-running-KafkaConfigUpdaterSuite INFO KafkaConfigUpdaterSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaConfigUpdaterSuite: 'setAuthenticationConfigIfNeeded without security should not set values' =====
+
+21/02/21 22:50:10.257 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'checkProxyUser with proxy current user should throw exception' =====
+
+21/02/21 22:50:10.387 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'checkProxyUser with proxy current user should throw exception' =====
+
+21/02/21 22:50:10.391 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with SASL_PLAINTEXT protocol should not include keystore and truststore config' =====
+
+21/02/21 22:50:10.391 ScalaTest-main-running-KafkaTokenUtilSuite WARN KafkaTokenUtil: Obtaining kafka delegation token through plain communication channel. Please consider the security impact.
+21/02/21 22:50:10.395 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with SASL_PLAINTEXT protocol should not include keystore and truststore config' =====
+
+21/02/21 22:50:10.397 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with SASL_SSL protocol should include truststore config' =====
+
+21/02/21 22:50:10.400 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with SASL_SSL protocol should include truststore config' =====
+
+21/02/21 22:50:10.402 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with SSL protocol should include keystore and truststore config' =====
+
+21/02/21 22:50:10.405 ScalaTest-main-running-KafkaTokenUtilSuite WARN KafkaTokenUtil: Obtaining kafka delegation token with SSL protocol. Please configure 2-way authentication on the broker side.
+21/02/21 22:50:10.406 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with SSL protocol should include keystore and truststore config' =====
+
+21/02/21 22:50:10.408 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with global config should not set dynamic jaas config' =====
+
+21/02/21 22:50:10.409 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with global config should not set dynamic jaas config' =====
+
+21/02/21 22:50:10.412 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with keytab should set keytab dynamic jaas config' =====
+
+21/02/21 22:50:10.422 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with keytab should set keytab dynamic jaas config' =====
+
+21/02/21 22:50:10.423 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties without keytab should set ticket cache dynamic jaas config' =====
+
+21/02/21 22:50:10.424 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties without keytab should set ticket cache dynamic jaas config' =====
+
+21/02/21 22:50:10.426 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with specified params should include it' =====
+
+21/02/21 22:50:10.427 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'createAdminClientProperties with specified params should include it' =====
+
+21/02/21 22:50:10.429 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'isGlobalJaasConfigurationProvided without global config should return false' =====
+
+21/02/21 22:50:10.430 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'isGlobalJaasConfigurationProvided without global config should return false' =====
+
+21/02/21 22:50:10.432 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'isGlobalJaasConfigurationProvided with global config should return false' =====
+
+21/02/21 22:50:10.432 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'isGlobalJaasConfigurationProvided with global config should return false' =====
+
+21/02/21 22:50:10.434 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig without token should return None' =====
+
+21/02/21 22:50:10.465 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig without token should return None' =====
+
+21/02/21 22:50:10.468 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig with non-matching tokens should return None' =====
+
+21/02/21 22:50:10.501 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig with non-matching tokens should return None' =====
+
+21/02/21 22:50:10.503 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig with one matching token should return token and cluster configuration' =====
+
+21/02/21 22:50:10.531 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig with one matching token should return token and cluster configuration' =====
+
+21/02/21 22:50:10.533 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig with multiple matching tokens should throw exception' =====
+
+21/02/21 22:50:10.561 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'findMatchingTokenClusterConfig with multiple matching tokens should throw exception' =====
+
+21/02/21 22:50:10.563 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'getTokenJaasParams with token should return scram module' =====
+
+21/02/21 22:50:10.587 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'getTokenJaasParams with token should return scram module' =====
+
+21/02/21 22:50:10.589 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate without security credentials enabled should return false' =====
+
+21/02/21 22:50:10.591 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate without security credentials enabled should return false' =====
+
+21/02/21 22:50:10.594 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate without cluster config should return false' =====
+
+21/02/21 22:50:10.594 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate without cluster config should return false' =====
+
+21/02/21 22:50:10.596 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate without jaas config should return false' =====
+
+21/02/21 22:50:10.598 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate without jaas config should return false' =====
+
+21/02/21 22:50:10.600 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate with same token should return false' =====
+
+21/02/21 22:50:10.626 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate with same token should return false' =====
+
+21/02/21 22:50:10.628 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate with different token should return true' =====
+
+21/02/21 22:50:10.650 ScalaTest-main-running-KafkaTokenUtilSuite INFO KafkaTokenUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenUtilSuite: 'needTokenUpdate with different token should return true' =====
+
+21/02/21 22:50:10.656 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams shouldn't throw exception when no SparkEnv available' =====
+
+21/02/21 22:50:10.659 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams shouldn't throw exception when no SparkEnv available' =====
+
+21/02/21 22:50:10.660 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should give back empty parameters' =====
+
+21/02/21 22:50:10.662 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should give back empty parameters' =====
+
+21/02/21 22:50:10.663 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should give back null value' =====
+
+21/02/21 22:50:10.664 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should give back null value' =====
+
+21/02/21 22:50:10.665 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should redact non String parameters' =====
+
+21/02/21 22:50:10.670 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should redact non String parameters' =====
+
+21/02/21 22:50:10.671 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should redact token password from parameters' =====
+
+21/02/21 22:50:10.697 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should redact token password from parameters' =====
+
+21/02/21 22:50:10.698 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should redact passwords from parameters' =====
+
+21/02/21 22:50:10.700 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactParams should redact passwords from parameters' =====
+
+21/02/21 22:50:10.701 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactJaasParam should give back null' =====
+
+21/02/21 22:50:10.702 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactJaasParam should give back null' =====
+
+21/02/21 22:50:10.703 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactJaasParam should give back empty string' =====
+
+21/02/21 22:50:10.703 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactJaasParam should give back empty string' =====
+
+21/02/21 22:50:10.704 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactJaasParam should redact token password' =====
+
+21/02/21 22:50:10.725 ScalaTest-main-running-KafkaRedactionUtilSuite INFO KafkaRedactionUtilSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaRedactionUtilSuite: 'redactJaasParam should redact token password' =====
+
+21/02/21 22:50:10.731 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should trow exception when not exists' =====
+
+21/02/21 22:50:10.732 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should trow exception when not exists' =====
+
+21/02/21 22:50:10.734 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should return entry with defaults' =====
+
+21/02/21 22:50:10.735 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should return entry with defaults' =====
+
+21/02/21 22:50:10.736 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should return entry overwrite defaults' =====
+
+21/02/21 22:50:10.737 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should return entry overwrite defaults' =====
+
+21/02/21 22:50:10.738 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should return specified kafka params' =====
+
+21/02/21 22:50:10.740 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getClusterConfig should return specified kafka params' =====
+
+21/02/21 22:50:10.740 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getAllClusterConfigs should return empty list when nothing configured' =====
+
+21/02/21 22:50:10.742 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getAllClusterConfigs should return empty list when nothing configured' =====
+
+21/02/21 22:50:10.744 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getAllClusterConfigs should return empty list with malformed configuration' =====
+
+21/02/21 22:50:10.744 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getAllClusterConfigs should return empty list with malformed configuration' =====
+
+21/02/21 22:50:10.747 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== TEST OUTPUT FOR o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getAllClusterConfigs should return multiple entries' =====
+
+21/02/21 22:50:10.749 ScalaTest-main-running-KafkaTokenSparkConfSuite INFO KafkaTokenSparkConfSuite: 
+
+===== FINISHED o.a.s.kafka010.KafkaTokenSparkConfSuite: 'getAllClusterConfigs should return multiple entries' =====
+

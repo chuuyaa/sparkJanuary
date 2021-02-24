@@ -55,7 +55,8 @@ import org.apache.spark.launcher.SparkLauncher
 import org.apache.spark.util._
 import org.apache.spark.deploy.collect.ArgumentAnalyzer
 import org.apache.spark.deploy.decisionmaking.theBrain
-import org.apache.spark.deploy.update.UpdateAnalyzer
+
+import java.lang.management.ManagementFactory
 /**
  * Whether to submit, kill, or request the status of an application.
  * The latter two operations are currently supported only for standalone and Mesos cluster modes.
@@ -223,8 +224,7 @@ private[spark] class SparkSubmit extends Logging {
     // Return values
     val childArgs = new ArrayBuffer[String]()
     val childClasspath = new ArrayBuffer[String]()
-    args.driverMemory = "1g"
-    val sparkConf = args.toSparkConf()
+    var sparkConf = args.toSparkConf()
     var childMainClass = ""
     logInfo("[CUYATEST] spark initial DRIVER MEMORY " + sparkConf.get(DRIVER_MEMORY))
 
@@ -622,10 +622,6 @@ private[spark] class SparkSubmit extends Logging {
       OptionAssigner(localJars, ALL_CLUSTER_MGRS, CLIENT, confKey = "spark.repl.local.jars")
     )
 
-    logInfo("[CUYATEST] BEFORE The driver memory : "+sparkConf.get(DRIVER_MEMORY))
-    logInfo("[CUYATEST] The executor core : "+sparkConf.get(EXECUTOR_CORES))
-    logInfo("[CUYATEST] The driver core : "+sparkConf.get(DRIVER_CORES))
-
     // In client mode, launch the application main class directly
     // In addition, add the main application jar and any added jars (if any) to the classpath
     if (deployMode == CLIENT) {
@@ -703,7 +699,20 @@ private[spark] class SparkSubmit extends Logging {
       }
     }
     val tb = new theBrain()
-    tb.theBrainAnalyzing(args, clusterManager)
+    val test = new Test()
+
+    logInfo(s"[CUYA TEST] get realtime available processor managementfactory :\n${ManagementFactory.getOperatingSystemMXBean().getAvailableProcessors}")
+    logInfo(s"[CUYA TEST] get realtime available processor runtime" +
+      s" :\n${Runtime.getRuntime.availableProcessors}")
+
+    logInfo(s"[CUYA TEST] get getmemory direct call scala :\n${ManagementFactory.getMemoryMXBean().getHeapMemoryUsage()}")
+
+
+
+    logInfo(s"[CUYA TEST] the arguments before change:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
+
+    sparkConf = tb.theBrainAnalyzing(sparkConf, clusterManager)
+    logInfo(s"[CUYA TEST] the arguments after change:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
 
     // Let YARN know it's a pyspark app, so it distributes needed libraries.
     if (clusterManager == YARN) {
@@ -875,8 +884,6 @@ private[spark] class SparkSubmit extends Logging {
    * running cluster deploy mode or python applications.
    */
   private def runMain(args: SparkSubmitArguments, uninitLog: Boolean): Unit = {
-    val analyzer = new ArgumentAnalyzer()
-    analyzer.analyzeArgument(args.master, args.deployMode, args.executorMemory, args.executorCores)
     val (childArgs, childClasspath, sparkConf, childMainClass) = prepareSubmitEnvironment(args)
     // Let the main class re-initialize the logging system once it starts.
     if (uninitLog) {

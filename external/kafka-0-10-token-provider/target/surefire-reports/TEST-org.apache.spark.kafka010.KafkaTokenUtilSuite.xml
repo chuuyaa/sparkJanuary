@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite 
+errors="0" failures="0" hostname="DESKTOP-JPLSL4N" name="org.apache.spark.kafka010.KafkaTokenUtilSuite" tests="20" time="0.402" timestamp="2021-02-21T06:50:10">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment">
+    </property>
+    <property 
+    name="sun.boot.library.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\bin">
+</property>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property 
+    name="java.vm.specification.name" value="Java Virtual Machine Specification">
+</property>
+    <property 
+    name="user.dir" value="C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider">
+</property>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="spark.ui.enabled" value="false"/>
+    <property 
+    name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment">
+</property>
+    <property 
+    name="basedir" value="C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider">
+</property>
+    <property 
+    name="java.endorsed.dirs" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\endorsed">
+</property>
+    <property name="os.arch" value="amd64"/>
+    <property 
+    name="java.io.tmpdir" value="C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target/tmp">
+</property>
+    <property name="derby.system.durability" value="test"/>
+    <property name="line.separator" value=" "/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="io.netty.tryReflectionSetAccessible" value="true"/>
+    <property 
+    name="log4j.configuration" value="file:src/test/resources/log4j.properties">
+</property>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="spark.ui.showConsoleProgress" value="false"/>
+    <property 
+    name="java.library.path" value="C:\Progra~1\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk1.8.0_221\bin;C:\hadoop-3.1.2\sbin;C:\hadoop-3.1.2\bin;C:\Progra~1\Java\jdk1.8.0_221;C:\Program Files\PuTTY\;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\User\sparkJanuary\bin;C:\hadoop-3.1.2\sbin;C:\Progra~1\Java\jdk1.8.0_221;C:\hadoop-3.1.2;C:\hadoop-3.1.2\bin;C:\hadoop-3.1.2\lib\native;C:\Progra~1\apache-maven-3.6.3\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Rtools 4.0;C:\Users\User\Anaconda3\envs\kublasean\Lib\R\bin\x64\Rgui.exe;C:\Users\User\sparkJanuary\python;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\sbt\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk1.8.0_221\bin;C:\hadoop-3.1.2\sbin;C:\hadoop-3.1.2\bin;C:\Progra~1\Java\jdk1.8.0_221;C:\Program Files\PuTTY\;C:\Program Files\apache-maven-3.6.3\bin;;;.">
+</property>
+    <property 
+    name="java.specification.name" value="Java Platform API Specification">
+</property>
+    <property name="java.class.version" value="52.0"/>
+    <property 
+    name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers">
+</property>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="spark.testing" value="1"/>
+    <property name="user.name" value="User"/>
+    <property 
+    name="java.class.path" value="C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target\scala-2.12\test-classes;C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target\scala-2.12\classes;C:\Users\User\.m2\repository\org\apache\spark\spark-core_2.12\3.0.1\spark-core_2.12-3.0.1.jar;C:\Users\User\.m2\repository\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\User\.m2\repository\org\apache\avro\avro\1.8.2\avro-1.8.2.jar;C:\Users\User\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\User\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;C:\Users\User\.m2\repository\org\tukaani\xz\1.5\xz-1.5.jar;C:\Users\User\.m2\repository\org\apache\avro\avro-mapred\1.8.2\avro-mapred-1.8.2-hadoop2.jar;C:\Users\User\.m2\repository\org\apache\avro\avro-ipc\1.8.2\avro-ipc-1.8.2.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\User\.m2\repository\com\twitter\chill_2.12\0.9.5\chill_2.12-0.9.5.jar;C:\Users\User\.m2\repository\com\esotericsoftware\kryo-shaded\4.0.2\kryo-shaded-4.0.2.jar;C:\Users\User\.m2\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;C:\Users\User\.m2\repository\com\twitter\chill-java\0.9.5\chill-java-0.9.5.jar;C:\Users\User\.m2\repository\org\apache\xbean\xbean-asm7-shaded\4.15\xbean-asm7-shaded-4.15.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-client\2.7.4\hadoop-client-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-common\2.7.4\hadoop-common-2.7.4.jar;C:\Users\User\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\User\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\User\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\User\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\User\.m2\repository\org\mortbay\jetty\jetty-sslengine\6.1.26\jetty-sslengine-6.1.26.jar;C:\Users\User\.m2\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\User\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\User\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\User\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\User\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\User\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-auth\2.7.4\hadoop-auth-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpcore\4.4.12\httpcore-4.4.12.jar;C:\Users\User\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\User\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\User\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\User\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\User\.m2\repository\org\apache\curator\curator-client\2.7.1\curator-client-2.7.1.jar;C:\Users\User\.m2\repository\org\apache\htrace\htrace-core\3.1.0-incubating\htrace-core-3.1.0-incubating.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.7.4\hadoop-hdfs-2.7.4.jar;C:\Users\User\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\User\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\User\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.7.4\hadoop-mapreduce-client-app-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.7.4\hadoop-mapreduce-client-common-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.7.4\hadoop-yarn-client-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.7.4\hadoop-yarn-server-common-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.7.4\hadoop-mapreduce-client-shuffle-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.7.4\hadoop-yarn-api-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.7.4\hadoop-mapreduce-client-core-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.7.4\hadoop-yarn-common-2.7.4.jar;C:\Users\User\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\User\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\User\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\User\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.7.4\hadoop-mapreduce-client-jobclient-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\hadoop\hadoop-annotations\2.7.4\hadoop-annotations-2.7.4.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-launcher_2.12\3.0.1\spark-launcher_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-kvstore_2.12\3.0.1\spark-kvstore_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-network-common_2.12\3.0.1\spark-network-common_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-network-shuffle_2.12\3.0.1\spark-network-shuffle_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-unsafe_2.12\3.0.1\spark-unsafe_2.12-3.0.1.jar;C:\Users\User\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\User\.m2\repository\org\apache\curator\curator-recipes\2.7.1\curator-recipes-2.7.1.jar;C:\Users\User\.m2\repository\org\apache\curator\curator-framework\2.7.1\curator-framework-2.7.1.jar;C:\Users\User\.m2\repository\com\google\guava\guava\14.0.1\guava-14.0.1.jar;C:\Users\User\.m2\repository\org\apache\zookeeper\zookeeper\3.4.14\zookeeper-3.4.14.jar;C:\Users\User\.m2\repository\org\apache\yetus\audience-annotations\0.5.0\audience-annotations-0.5.0.jar;C:\Users\User\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-math3\3.4.1\commons-math3-3.4.1.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-text\1.6\commons-text-1.6.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\User\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\User\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-log4j12\1.7.30\slf4j-log4j12-1.7.30.jar;C:\Users\User\.m2\repository\com\ning\compress-lzf\1.0.3\compress-lzf-1.0.3.jar;C:\Users\User\.m2\repository\org\xerial\snappy\snappy-java\1.1.7.5\snappy-java-1.1.7.5.jar;C:\Users\User\.m2\repository\org\lz4\lz4-java\1.7.1\lz4-java-1.7.1.jar;C:\Users\User\.m2\repository\com\github\luben\zstd-jni\1.4.4-3\zstd-jni-1.4.4-3.jar;C:\Users\User\.m2\repository\org\roaringbitmap\RoaringBitmap\0.7.45\RoaringBitmap-0.7.45.jar;C:\Users\User\.m2\repository\org\roaringbitmap\shims\0.7.45\shims-0.7.45.jar;C:\Users\User\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\User\.m2\repository\org\scala-lang\modules\scala-xml_2.12\1.2.0\scala-xml_2.12-1.2.0.jar;C:\Users\User\.m2\repository\org\scala-lang\scala-library\2.12.10\scala-library-2.12.10.jar;C:\Users\User\.m2\repository\org\scala-lang\scala-reflect\2.12.10\scala-reflect-2.12.10.jar;C:\Users\User\.m2\repository\org\json4s\json4s-jackson_2.12\3.6.6\json4s-jackson_2.12-3.6.6.jar;C:\Users\User\.m2\repository\org\json4s\json4s-core_2.12\3.6.6\json4s-core_2.12-3.6.6.jar;C:\Users\User\.m2\repository\org\json4s\json4s-ast_2.12\3.6.6\json4s-ast_2.12-3.6.6.jar;C:\Users\User\.m2\repository\org\json4s\json4s-scalap_2.12\3.6.6\json4s-scalap_2.12-3.6.6.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\core\jersey-client\2.30\jersey-client-2.30.jar;C:\Users\User\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\2.1.6\jakarta.ws.rs-api-2.1.6.jar;C:\Users\User\.m2\repository\org\glassfish\hk2\external\jakarta.inject\2.6.1\jakarta.inject-2.6.1.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\core\jersey-common\2.30\jersey-common-2.30.jar;C:\Users\User\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\User\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.3\osgi-resource-locator-1.0.3.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\core\jersey-server\2.30\jersey-server-2.30.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\media\jersey-media-jaxb\2.30\jersey-media-jaxb-2.30.jar;C:\Users\User\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet\2.30\jersey-container-servlet-2.30.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet-core\2.30\jersey-container-servlet-core-2.30.jar;C:\Users\User\.m2\repository\org\glassfish\jersey\inject\jersey-hk2\2.30\jersey-hk2-2.30.jar;C:\Users\User\.m2\repository\org\glassfish\hk2\hk2-locator\2.6.1\hk2-locator-2.6.1.jar;C:\Users\User\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.6.1\aopalliance-repackaged-2.6.1.jar;C:\Users\User\.m2\repository\org\glassfish\hk2\hk2-api\2.6.1\hk2-api-2.6.1.jar;C:\Users\User\.m2\repository\org\glassfish\hk2\hk2-utils\2.6.1\hk2-utils-2.6.1.jar;C:\Users\User\.m2\repository\org\javassist\javassist\3.25.0-GA\javassist-3.25.0-GA.jar;C:\Users\User\.m2\repository\io\netty\netty-all\4.1.47.Final\netty-all-4.1.47.Final.jar;C:\Users\User\.m2\repository\com\clearspring\analytics\stream\2.9.6\stream-2.9.6.jar;C:\Users\User\.m2\repository\io\dropwizard\metrics\metrics-core\4.1.1\metrics-core-4.1.1.jar;C:\Users\User\.m2\repository\io\dropwizard\metrics\metrics-jvm\4.1.1\metrics-jvm-4.1.1.jar;C:\Users\User\.m2\repository\io\dropwizard\metrics\metrics-json\4.1.1\metrics-json-4.1.1.jar;C:\Users\User\.m2\repository\io\dropwizard\metrics\metrics-graphite\4.1.1\metrics-graphite-4.1.1.jar;C:\Users\User\.m2\repository\io\dropwizard\metrics\metrics-jmx\4.1.1\metrics-jmx-4.1.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.12\2.10.0\jackson-module-scala_2.12-2.10.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\module\jackson-module-paranamer\2.10.0\jackson-module-paranamer-2.10.0.jar;C:\Users\User\.m2\repository\org\apache\ivy\ivy\2.4.0\ivy-2.4.0.jar;C:\Users\User\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\User\.m2\repository\net\razorvine\pyrolite\4.30\pyrolite-4.30.jar;C:\Users\User\.m2\repository\net\sf\py4j\py4j\0.10.9\py4j-0.10.9.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-crypto\1.0.0\commons-crypto-1.0.0.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-core_2.12\3.0.1\spark-core_2.12-3.0.1-tests.jar;C:\Users\User\.m2\repository\org\apache\kafka\kafka-clients\2.4.1\kafka-clients-2.4.1.jar;C:\Users\User\.m2\repository\org\mockito\mockito-core\3.1.0\mockito-core-3.1.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.10\byte-buddy-agent-1.9.10.jar;C:\Users\User\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-tags_2.12\3.0.1\spark-tags_2.12-3.0.1.jar;C:\Users\User\.m2\repository\org\apache\spark\spark-tags_2.12\3.0.1\spark-tags_2.12-3.0.1-tests.jar;C:\Users\User\.m2\repository\org\spark-project\spark\unused\1.0.0\unused-1.0.0.jar;C:\Users\User\.m2\repository\org\scalatest\scalatest_2.12\3.0.8\scalatest_2.12-3.0.8.jar;C:\Users\User\.m2\repository\org\scalactic\scalactic_2.12\3.0.8\scalactic_2.12-3.0.8.jar;C:\Users\User\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\com\novocode\junit-interface\0.11\junit-interface-0.11.jar;C:\Users\User\.m2\repository\org\scala-sbt\test-interface\1.0\test-interface-1.0.jar">
+</property>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Progra~1\Java\jdk1.8.0_221\jre"/>
+    <property 
+    name="sun.java.command" value="org.scalatest.tools.Runner -R C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target\scala-2.12\classes C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target\scala-2.12\test-classes -l  org.apache.spark.tags.ChromeUITest -o -f C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target\surefire-reports\SparkTestSuite.txt -u C:\Users\User\sparkJanuary\external\kafka-0-10-token-provider\target\surefire-reports\.">
+</property>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="spark.test.webdriver.chrome.driver" value="null"/>
+    <property 
+    name="java.ext.dirs" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext">
+</property>
+    <property 
+    name="sun.boot.class.path" value="C:\Progra~1\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Progra~1\Java\jdk1.8.0_221\jre\classes">
+</property>
+    <property name="spark.test.home" value="C:\Users\User\sparkJanuary"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="file.separator" value="\"/>
+    <property 
+    name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/">
+</property>
+    <property name="spark.unsafe.exceptionOnMemoryLeak" value="true"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="test.src.tables" value="__not_used__"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase 
+  name="checkProxyUser with proxy current user should throw exception" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.131">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties with SASL_PLAINTEXT protocol should not include keystore and truststore config" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.006">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties with SASL_SSL protocol should include truststore config" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.003">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties with SSL protocol should include keystore and truststore config" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.004">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties with global config should not set dynamic jaas config" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.002">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties with keytab should set keytab dynamic jaas config" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.011">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties without keytab should set ticket cache dynamic jaas config" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.002">
+</testcase>
+  <testcase 
+  name="createAdminClientProperties with specified params should include it" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.001">
+</testcase>
+  <testcase 
+  name="isGlobalJaasConfigurationProvided without global config should return false" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.001">
+</testcase>
+  <testcase 
+  name="isGlobalJaasConfigurationProvided with global config should return false" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.001">
+</testcase>
+  <testcase 
+  name="findMatchingTokenClusterConfig without token should return None" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.031">
+</testcase>
+  <testcase 
+  name="findMatchingTokenClusterConfig with non-matching tokens should return None" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.034">
+</testcase>
+  <testcase 
+  name="findMatchingTokenClusterConfig with one matching token should return token and cluster configuration" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.029">
+</testcase>
+  <testcase 
+  name="findMatchingTokenClusterConfig with multiple matching tokens should throw exception" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.029">
+</testcase>
+  <testcase 
+  name="getTokenJaasParams with token should return scram module" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.024">
+</testcase>
+  <testcase 
+  name="needTokenUpdate without security credentials enabled should return false" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.004">
+</testcase>
+  <testcase 
+  name="needTokenUpdate without cluster config should return false" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.001">
+</testcase>
+  <testcase 
+  name="needTokenUpdate without jaas config should return false" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.003">
+</testcase>
+  <testcase 
+  name="needTokenUpdate with same token should return false" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.026">
+</testcase>
+  <testcase 
+  name="needTokenUpdate with different token should return true" classname="org.apache.spark.kafka010.KafkaTokenUtilSuite" time="0.022">
+</testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
