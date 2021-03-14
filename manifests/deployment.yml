@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "ckubernetes-0733"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "ckubernetes-0733"
+  template:
+    metadata:
+      labels:
+        app: "ckubernetes-0733"
+    spec:
+      containers:
+        - name: "ckubernetes-0733"
+          image: "sparkjanuary.azurecr.io/ckubernetes"
+          ports:
+          - containerPort: 8080
