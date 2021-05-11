@@ -75,6 +75,18 @@ class SparkSubmitOptionParser {
   protected final String NUM_EXECUTORS = "--num-executors";
   protected final String PRINCIPAL = "--principal";
   protected final String QUEUE = "--queue";
+  protected final String DATA = "--data";
+  protected final String WORKLOAD = "--workload";
+  protected final String MASTER_MEMORY = "--mm";
+  protected final String MASTER_CORES = "--mc";
+  protected final String WORKER_NODES = "--wn";
+  protected final String WORKER_MEMORY_PER_NODE = "--wmpn";
+  protected final String WORKER_CORES_PER_NODE = "--wcpn";
+//  protected final String AVAILABLE_MASTER_MEMORY = "--available-master-memory"
+//  protected final String AVAILABLE_MASTER_CORES = "--available-master-cores"
+
+
+
 
   /**
    * This is the canonical list of spark-submit options. Each entry in the array contains the
@@ -115,6 +127,13 @@ class SparkSubmitOptionParser {
     { REPOSITORIES },
     { STATUS },
     { TOTAL_EXECUTOR_CORES },
+    { DATA },
+    { WORKLOAD },
+    { MASTER_MEMORY },
+    { MASTER_CORES },
+    { WORKER_NODES },
+    { WORKER_MEMORY_PER_NODE },
+    { WORKER_CORES_PER_NODE }
   };
 
   /**

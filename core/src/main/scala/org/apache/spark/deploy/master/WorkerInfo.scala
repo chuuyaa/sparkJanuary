@@ -18,7 +18,6 @@
 package org.apache.spark.deploy.master
 
 import scala.collection.mutable
-
 import org.apache.spark.resource.{ResourceAllocator, ResourceInformation, ResourceRequirement}
 import org.apache.spark.rpc.RpcEndpointRef
 import org.apache.spark.util.Utils
@@ -60,6 +59,14 @@ private[spark] class WorkerInfo(
   @transient var lastHeartbeat: Long = _
 
   init()
+
+  println(" AT WORKER INFO ----- [CUYATEST] HOST: " +host)
+  println("[CUYATEST] PORT: " +port)
+  println("[CUYATEST] CORES: " +cores)
+
+//  val hardwareSpec = Seq(host, port, cores)
+//  val hsSchema = List(StructField("host", StringType, true), StructField("port", StringType, true), StructField("cores", StringType, true))
+//  val hsDF = spark.
 
   def coresFree: Int = cores - coresUsed
   def memoryFree: Int = memory - memoryUsed

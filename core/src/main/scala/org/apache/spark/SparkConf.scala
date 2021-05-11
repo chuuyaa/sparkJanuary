@@ -595,7 +595,7 @@ private[spark] object SparkConf extends Logging {
 
   /**
    * Maps deprecated config keys to information about the deprecation.
-   *
+   *n
    * The extra information is logged as a warning when the config is present in the user's
    * configuration.
    */

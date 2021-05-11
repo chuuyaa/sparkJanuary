@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.spark.streaming.kafka010.JavaKafkaRDDSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.194 s - in org.apache.spark.streaming.kafka010.JavaKafkaRDDSuite

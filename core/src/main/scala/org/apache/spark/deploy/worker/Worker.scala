@@ -196,6 +196,10 @@ private[deploy] class Worker(
     }
   }
 
+  println("[CUYATEST] HOST: " +host)
+  println("[CUYATEST] PORT: " +port)
+  println("[CUYATEST] CORES: " +cores)
+
   override def onStart(): Unit = {
     assert(!registered)
     logInfo("Starting Spark worker %s:%d with %d cores, %s RAM".format(

@@ -73,8 +73,8 @@ if exist %LAUNCHER_OUTPUT% goto :gen
 "%RUNNER%" -Xmx128m -cp "%LAUNCH_CLASSPATH%" org.apache.spark.launcher.Main %* > %LAUNCHER_OUTPUT%
 for /f "tokens=*" %%i in (%LAUNCHER_OUTPUT%) do (
   set SPARK_CMD=%%i
-  echo "[CUYATEST] THE LAUNCHER OUTPUT - /n %%i  /n End of launcher output"
+  rem echo "[CUYATEST] THE LAUNCHER OUTPUT - /n %%i  /n End of launcher output"
 )
 rem del %LAUNCHER_OUTPUT%
-echo "[CUYATEST] %SPARK_CMD%"
+rem echo "[CUYATEST] %SPARK_CMD%"
 %SPARK_CMD%

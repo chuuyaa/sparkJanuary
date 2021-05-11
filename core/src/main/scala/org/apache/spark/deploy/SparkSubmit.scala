@@ -54,7 +54,8 @@ import org.apache.spark.internal.config.UI._
 import org.apache.spark.launcher.SparkLauncher
 import org.apache.spark.util._
 import org.apache.spark.deploy.collect.ArgumentAnalyzer
-import org.apache.spark.deploy.decisionmaking.theBrain
+import org.apache.spark.deploy.decisionmaking.{CalculateUtil, RequestData}
+import org.apache.spark.deploy.update.UpdateUtil
 
 import java.lang.management.ManagementFactory
 /**
@@ -226,7 +227,9 @@ private[spark] class SparkSubmit extends Logging {
     val childClasspath = new ArrayBuffer[String]()
     var sparkConf = args.toSparkConf()
     var childMainClass = ""
-    logInfo("[CUYATEST] spark initial DRIVER MEMORY " + sparkConf.get(DRIVER_MEMORY))
+    val collModule = new ArgumentAnalyzer()
+
+//    logInfo("[CUYATEST] spark initial DRIVER MEMORY " + sparkConf.get(DRIVER_MEMORY))
 
     // Set the cluster manager
     val clusterManager: Int = args.master match {
@@ -239,7 +242,7 @@ private[spark] class SparkSubmit extends Logging {
         error("Master must either be yarn or start with spark, mesos, k8s, or local")
         -1
     }
-    logInfo("[CUYATEST] the cluster manager is " + clusterManager)
+//    logInfo("[CUYATEST] the cluster manager is " + clusterManager)
     // Set the deploy mode; default is client mode
     var deployMode: Int = args.deployMode match {
       case "client" | null => CLIENT
@@ -698,20 +701,31 @@ private[spark] class SparkSubmit extends Logging {
         childArgs ++= args.childArgs
       }
     }
-    val tb = new theBrain()
-    val test = new Test()
 
-    logInfo(s"[CUYA TEST] get realtime available processor managementfactory :\n${ManagementFactory.getOperatingSystemMXBean().getAvailableProcessors}")
-    logInfo(s"[CUYA TEST] get realtime available processor runtime" +
-      s" :\n${Runtime.getRuntime.availableProcessors}")
+    val mec = (args.workerMemoryPerNode.toDouble - 1) / args.data.toDouble / 100
+    val updateUtil = new UpdateUtil
+    sparkConf = updateUtil.updateForce(sparkConf, clusterManager, new RequestData(
+      args.masterMemory,
+      args.masterCores,
+      args.workerNodes,
+      args.workerMemoryPerNode,
+      args.workerCoresPerNode,
+      args.data,
+      args.workload,
+      mec.toString
+    ))
 
-    logInfo(s"[CUYA TEST] get getmemory direct call scala :\n${ManagementFactory.getMemoryMXBean().getHeapMemoryUsage()}")
+//    logInfo(s"[CUYA TEST] get realtime available processor managementfactory :\n${ManagementFactory.getOperatingSystemMXBean().getAvailableProcessors}")
+//    logInfo(s"[CUYA TEST] get realtime available processor runtime" +
+//      s" :\n${Runtime.getRuntime.availableProcessors}")
+//
+//    logInfo(s"[CUYA TEST] get getmemory direct call scala :\n${ManagementFactory.getMemoryMXBean().getHeapMemoryUsage()}")
 
 
 
     logInfo(s"[CUYA TEST] the arguments before change:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
 
-    sparkConf = tb.theBrainAnalyzing(sparkConf, clusterManager)
+    //sparkConf = tb.theBrainAnalyzing(sparkConf, clusterManager)
     logInfo(s"[CUYA TEST] the arguments after change:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
 
     // Let YARN know it's a pyspark app, so it distributes needed libraries.
@@ -925,10 +939,8 @@ private[spark] class SparkSubmit extends Logging {
     }
 
     val app: SparkApplication = if (classOf[SparkApplication].isAssignableFrom(mainClass)) {
-      logInfo("[CUYATEST] masuk kat if isAssignableFrom")
       mainClass.getConstructor().newInstance().asInstanceOf[SparkApplication]
     } else {
-      logInfo("[CUYATEST] masuk kat else")
       new JavaMainApplication(mainClass)
     }
 
@@ -943,10 +955,10 @@ private[spark] class SparkSubmit extends Logging {
     }
 
     try {
-      logInfo("[CUYATEST] Your child args : "+childArgs.foreach(println))
-      logInfo("[CUYATEST] The driver memory : "+sparkConf.get(DRIVER_MEMORY))
-      logInfo("[CUYATEST] The executor core : "+sparkConf.get(EXECUTOR_CORES))
-      logInfo("[CUYATEST] The driver core : "+sparkConf.get(DRIVER_CORES))
+//      logInfo("[CUYATEST] Your child args : "+childArgs.foreach(println))
+//      logInfo("[CUYATEST] The driver memory : "+sparkConf.get(DRIVER_MEMORY))
+//      logInfo("[CUYATEST] The executor core : "+sparkConf.get(EXECUTOR_CORES))
+//      logInfo("[CUYATEST] The driver core : "+sparkConf.get(DRIVER_CORES))
 
 
       app.start(childArgs.toArray, sparkConf)

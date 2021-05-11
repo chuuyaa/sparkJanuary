@@ -21,19 +21,18 @@ import java.io.{ByteArrayOutputStream, File, PrintStream}
 import java.lang.reflect.InvocationTargetException
 import java.nio.charset.StandardCharsets
 import java.util.{List => JList}
-
 import scala.collection.JavaConverters._
 import scala.collection.mutable.{ArrayBuffer, HashMap}
 import scala.io.Source
 import scala.util.Try
-
 import org.apache.spark.{SparkConf, SparkException, SparkUserAppException}
 import org.apache.spark.deploy.SparkSubmitAction._
-import org.apache.spark.internal.{config, Logging}
-import org.apache.spark.internal.config.DYN_ALLOCATION_ENABLED
+import org.apache.spark.internal.{Logging, config}
+import org.apache.spark.internal.config.{DYN_ALLOCATION_ENABLED}
 import org.apache.spark.launcher.SparkSubmitArgumentsParser
 import org.apache.spark.network.util.JavaUtils
 import org.apache.spark.util.Utils
+import org.apache.spark.deploy.collect.ArgumentAnalyzer
 
 /**
  * Parses and encapsulates arguments from the spark-submit script.
@@ -70,6 +69,14 @@ private[deploy] class SparkSubmitArguments(args: Seq[String], env: Map[String, S
   var pyFiles: String = null
   var isR: Boolean = false
   var action: SparkSubmitAction = null
+  var data: String = null
+  var workload: String = null
+  var masterMemory: String = null
+  var masterCores: String = null
+  var workerNodes: String = null
+  var workerMemoryPerNode: String = null
+  var workerCoresPerNode: String = null
+
   val sparkProperties: HashMap[String, String] = new HashMap[String, String]()
   var proxyUser: String = null
   var principal: String = null
@@ -82,6 +89,8 @@ private[deploy] class SparkSubmitArguments(args: Seq[String], env: Map[String, S
   var submissionToKill: String = null
   var submissionToRequestStatusFor: String = null
   var useRest: Boolean = false // used internally
+
+  val argumentAnalyzer = new ArgumentAnalyzer()
 
   /** Default properties present in the currently defined defaults file. */
   lazy val defaultSparkProperties: HashMap[String, String] = {
@@ -182,6 +191,8 @@ private[deploy] class SparkSubmitArguments(args: Seq[String], env: Map[String, S
       .orNull
     name = Option(name).orElse(sparkProperties.get("spark.app.name")).orNull
     jars = Option(jars).orElse(sparkProperties.get(config.JARS.key)).orNull
+    data = Option(data).orElse(sparkProperties.get(config.DATA.key)).orNull
+    workload = Option(workload).orElse(sparkProperties.get(config.WORKLOAD.key)).orNull
     files = Option(files).orElse(sparkProperties.get(config.FILES.key)).orNull
     pyFiles = Option(pyFiles).orElse(sparkProperties.get(config.SUBMIT_PYTHON_FILES.key)).orNull
     ivyRepoPath = sparkProperties.get("spark.jars.ivy").orNull
@@ -320,6 +331,13 @@ private[deploy] class SparkSubmitArguments(args: Seq[String], env: Map[String, S
     |  packagesExclusions      $packagesExclusions
     |  repositories            $repositories
     |  verbose                 $verbose
+    |  data                    $data
+    |  workload                $workload
+    |  masterMemory            $masterMemory
+    |  masterCores             $masterCores
+    |  workerNodes             $workerNodes
+    |  workerCoresPerNode      $workerCoresPerNode
+    |  workerMemoryPerNode     $workerMemoryPerNode
     |
     |Spark properties used, including those specified through
     | --conf and those from the properties file $propertiesFile:
@@ -441,6 +459,22 @@ private[deploy] class SparkSubmitArguments(args: Seq[String], env: Map[String, S
       case USAGE_ERROR =>
         printUsageAndExit(1)
 
+      case DATA =>
+        data = value
+        //argumentAnalyzer.dataStats(data)
+
+      case WORKLOAD =>
+        workload = value
+      case MASTER_MEMORY =>
+        masterMemory = value
+      case WORKER_NODES =>
+        workerNodes = value
+      case WORKER_MEMORY_PER_NODE =>
+        workerMemoryPerNode = value
+      case WORKER_CORES_PER_NODE =>
+        workerCoresPerNode = value
+      case MASTER_CORES =>
+        masterCores = value
       case _ =>
         error(s"Unexpected argument '$opt'.")
     }

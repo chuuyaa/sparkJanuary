@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/dependency-reduced-pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -15,7 +17,6 @@
         <option value="$PROJECT_DIR$/common/sketch/pom.xml" />
         <option value="$PROJECT_DIR$/common/tags/pom.xml" />
         <option value="$PROJECT_DIR$/common/unsafe/pom.xml" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/examples/pom.xml" />
         <option value="$PROJECT_DIR$/external/avro/pom.xml" />
         <option value="$PROJECT_DIR$/external/kafka-0-10-assembly/pom.xml" />

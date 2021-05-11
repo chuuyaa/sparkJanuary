@@ -1717,6 +1717,18 @@ package object config {
     .toSequence
     .createWithDefault(Nil)
 
+  private[spark] val DATA = ConfigBuilder("spark.data")
+    .version("0.9.0")
+    .stringConf
+    .toSequence
+    .createWithDefault(Nil)
+
+  private[spark] val WORKLOAD = ConfigBuilder("spark.workload")
+    .version("0.9.0")
+    .stringConf
+    .toSequence
+    .createWithDefault(Nil)
+
   private[spark] val FILES = ConfigBuilder("spark.files")
     .version("1.0.0")
     .stringConf

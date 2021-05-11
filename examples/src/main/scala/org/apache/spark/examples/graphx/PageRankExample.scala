@@ -41,7 +41,7 @@ object PageRankExample {
 
     // $example on$
     // Load the edges as a graph
-    val graph = GraphLoader.edgeListFile(sc, "data/graphx/followers.txt")
+/*    val graph = GraphLoader.edgeListFile(sc, "data/graphx/followers.txt")
     // Run PageRank
     val ranks = graph.pageRank(0.0001).vertices
     // Join the ranks with the usernames
@@ -53,7 +53,7 @@ object PageRankExample {
       case (id, (username, rank)) => (username, rank)
     }
     // Print the result
-    println(ranksByUsername.collect().mkString("\n"))
+    println(ranksByUsername.collect().mkString("\n"))*/
     // $example off$
     spark.stop()
   }
