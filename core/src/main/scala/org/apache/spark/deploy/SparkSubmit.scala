@@ -702,19 +702,21 @@ private[spark] class SparkSubmit extends Logging {
       }
     }
 
-    val mec = (args.workerMemoryPerNode.toDouble - 1) / args.data.toDouble / 100
-    val updateUtil = new UpdateUtil
-    sparkConf = updateUtil.updateForce(sparkConf, clusterManager, new RequestData(
-      args.masterMemory,
-      args.masterCores,
-      args.workerNodes,
-      args.workerMemoryPerNode,
-      args.workerCoresPerNode,
-      args.data,
-      args.workload,
-      mec.toString
-    ))
-
+    if(args.workerMemoryPerNode != null) {
+      var mec = (args.workerMemoryPerNode.toDouble - 1) / args.data.toDouble / 100
+      mec = BigDecimal(mec).setScale(1, BigDecimal.RoundingMode.HALF_UP).toDouble
+      val updateUtil = new UpdateUtil
+      sparkConf = updateUtil.updateForce(sparkConf, clusterManager, new RequestData(
+        args.masterMemory,
+        args.masterCores,
+        args.workerNodes,
+        args.workerMemoryPerNode,
+        args.workerCoresPerNode,
+        args.data,
+        args.workload,
+        mec.toString
+      ))
+    }
 //    logInfo(s"[CUYA TEST] get realtime available processor managementfactory :\n${ManagementFactory.getOperatingSystemMXBean().getAvailableProcessors}")
 //    logInfo(s"[CUYA TEST] get realtime available processor runtime" +
 //      s" :\n${Runtime.getRuntime.availableProcessors}")

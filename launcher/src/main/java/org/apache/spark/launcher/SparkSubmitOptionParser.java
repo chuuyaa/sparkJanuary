@@ -82,8 +82,6 @@ class SparkSubmitOptionParser {
   protected final String WORKER_NODES = "--wn";
   protected final String WORKER_MEMORY_PER_NODE = "--wmpn";
   protected final String WORKER_CORES_PER_NODE = "--wcpn";
-//  protected final String AVAILABLE_MASTER_MEMORY = "--available-master-memory"
-//  protected final String AVAILABLE_MASTER_CORES = "--available-master-cores"
 
 
 
