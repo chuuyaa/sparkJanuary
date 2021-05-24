@@ -1,3 +1,0 @@
-Spark Executor Command: "C:\PROGRA~1\Java\JDK18~2.0_2\bin\java" "-cp" "C:\Users\User\sparkJanuary\bin\..\conf\;C:\Users\User\sparkJanuary\assembly\target\scala-2.12\jars\*;$HADOOP_HOME/etc/hadoop" "-Xmx4096M" "-Dspark.driver.port=58048" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@DESKTOP-JPLSL4N:58048" "--executor-id" "0" "--hostname" "9.0.0.1" "--cores" "1" "--app-id" "app-20210515174510-0006" "--worker-url" "spark://Worker@9.0.0.1:58002"
-========================================
-

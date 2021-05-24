@@ -62,7 +62,7 @@ if not "x%JAVA_HOME%"=="x" (
 )
 
 rem The launcher library prints the command to be executed in a single line suitable for being
-rem executed by the batch interpreter. So read all the output of the launcher into a variable.
+rem executed by the batch interpreter. Soan  read all the output of the launcher into a variable.
 :gen
 set LAUNCHER_OUTPUT=%temp%\spark-class-launcher-output-%RANDOM%.txt
 echo "%LAUNCHER_OUTPUT%"
