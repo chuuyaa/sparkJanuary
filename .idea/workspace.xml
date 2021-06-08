@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9362b24a-041f-4087-b014-fd9d06beca70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assembly/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-catalyst_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-catalyst_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-core_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-core_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-graphx_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-graphx_2.12-3.0.1.jar" afterDir="false" />
@@ -22,9 +23,7 @@
       <change beforePath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-tags_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-tags_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-unsafe_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/scala-2.12/jars/spark-unsafe_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assembly/target/spark-assembly_2.12-3.0.1-shaded.pom" beforeDir="false" afterPath="$PROJECT_DIR$/assembly/target/spark-assembly_2.12-3.0.1-shaded.pom" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/spark-class2.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/spark-class2.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/kvstore/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/kvstore/target/analysis/test-compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/kvstore/target/spark-kvstore_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -32,7 +31,6 @@
       <change beforePath="$PROJECT_DIR$/common/network-common/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-common/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-common/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-common/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-common/target/original-spark-network-common_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-common/target/original-spark-network-common_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-common/target/spark-network-common_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -40,28 +38,19 @@
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/original-spark-network-shuffle_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/original-spark-network-shuffle_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-shuffle/target/spark-network-shuffle_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-yarn/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-yarn/target/analysis/compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-yarn/target/scala-2.12/spark-3.0.1-yarn-shuffle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-yarn/target/scala-2.12/spark-3.0.1-yarn-shuffle.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1-test-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1-tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/network-yarn/target/spark-network-yarn_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/sketch/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/sketch/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/sketch/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/sketch/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/sketch/target/original-spark-sketch_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/sketch/target/original-spark-sketch_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/sketch/target/spark-sketch_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tags/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/tags/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tags/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/tags/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tags/target/original-spark-tags_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/tags/target/original-spark-tags_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/tags/target/spark-tags_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -69,17 +58,16 @@
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/original-spark-unsafe_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/original-spark-unsafe_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/unsafe/target/spark-unsafe_2.12-3.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/spark-defaults.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/spark-defaults.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/original-spark-core_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/original-spark-core_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/scala-2.12/classes/org/apache/spark/api/python/BytesToString.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/scala-2.12/classes/org/apache/spark/api/python/BytesToString.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/scala-2.12/classes/org/apache/spark/internal/config/package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/scala-2.12/classes/org/apache/spark/internal/config/package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/spark-core_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -87,19 +75,16 @@
       <change beforePath="$PROJECT_DIR$/examples/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/examples/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/target/original-spark-examples_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/examples/target/original-spark-examples_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/target/scala-2.12/jars/spark-examples_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/examples/target/scala-2.12/jars/spark-examples_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/target/spark-examples_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/target/spark-examples_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/examples/target/spark-examples_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/target/spark-examples_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/examples/target/spark-examples_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/original-spark-avro_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/original-spark-avro_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/avro/target/spark-avro_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/original-spark-streaming-kafka-0-10-assembly_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/original-spark-streaming-kafka-0-10-assembly_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-assembly/target/spark-streaming-kafka-0-10-assembly_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -107,7 +92,6 @@
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-sql/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-sql/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/original-spark-sql-kafka-0-10_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-sql/target/original-spark-sql-kafka-0-10_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-sql/target/spark-sql-kafka-0-10_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -115,7 +99,6 @@
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/original-spark-token-provider-kafka-0-10_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/original-spark-token-provider-kafka-0-10_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10-token-provider/target/spark-token-provider-kafka-0-10_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -123,7 +106,6 @@
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/original-spark-streaming-kafka-0-10_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10/target/original-spark-streaming-kafka-0-10_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/external/kafka-0-10/target/spark-streaming-kafka-0-10_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -131,18 +113,15 @@
       <change beforePath="$PROJECT_DIR$/graphx/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphx/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphx/target/original-spark-graphx_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/original-spark-graphx_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/graphx/target/spark-graphx_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/launcher/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/launcher/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/target/analysis/test-compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launcher/target/spark-launcher_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib-local/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/mllib-local/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib-local/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/mllib-local/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib-local/target/original-spark-mllib-local_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib-local/target/original-spark-mllib-local_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib-local/target/spark-mllib-local_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -150,7 +129,6 @@
       <change beforePath="$PROJECT_DIR$/mllib/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/mllib/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/mllib/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib/target/original-spark-mllib_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib/target/original-spark-mllib_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mllib/target/spark-mllib_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -158,18 +136,10 @@
       <change beforePath="$PROJECT_DIR$/repl/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repl/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repl/target/original-spark-repl_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/original-spark-repl_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/repl/target/spark-repl_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/analysis/compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/analysis/test-compile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/original-spark-yarn_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/original-spark-yarn_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1-test-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1-tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/resource-managers/yarn/target/spark-yarn_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/original-spark-catalyst_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/original-spark-catalyst_2.12-3.0.1.jar" afterDir="false" />
@@ -179,7 +149,6 @@
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/scala-2.12/classes/org/apache/spark/sql/catalyst/parser/AstBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/scala-2.12/classes/org/apache/spark/sql/catalyst/parser/AstBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/scala-2.12/classes/org/apache/spark/sql/catalyst/parser/PostProcessor$.class" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/scala-2.12/classes/org/apache/spark/sql/catalyst/parser/PostProcessor$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/scala-2.12/classes/org/apache/spark/sql/catalyst/parser/PostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/scala-2.12/classes/org/apache/spark/sql/catalyst/parser/PostProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/catalyst/target/spark-catalyst_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -187,7 +156,6 @@
       <change beforePath="$PROJECT_DIR$/sql/core/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/sql/core/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/core/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/sql/core/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/core/target/original-spark-sql_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/core/target/original-spark-sql_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/core/target/spark-sql_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -195,7 +163,6 @@
       <change beforePath="$PROJECT_DIR$/sql/hive/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hive/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/hive/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hive/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/hive/target/original-spark-hive_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hive/target/original-spark-hive_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sql/hive/target/spark-hive_2.12-3.0.1-tests.jar" afterDir="false" />
@@ -204,31 +171,16 @@
       <change beforePath="$PROJECT_DIR$/streaming/target/analysis/test-compile" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/analysis/test-compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streaming/target/original-spark-streaming_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/original-spark-streaming_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streaming/target/original-spark-streaming_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/original-spark-streaming_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-shaded-tests.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/target/spark-streaming_2.12-3.0.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/target/analysis/compile" beforeDir="false" afterPath="$PROJECT_DIR$/tools/target/analysis/compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/target/original-spark-tools_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/target/original-spark-tools_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-test-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-test-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tools/target/spark-tools_2.12-3.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210515174510-0006/0/stderr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210515174510-0006/0/stdout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210515174510-0006/1/stderr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210515174510-0006/1/stdout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210515174510-0006/2/stderr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210515174510-0006/2/stdout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210516203104-0000/0/stderr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210516203104-0000/0/stdout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210517083053-0001/0/stderr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210517083053-0001/0/stdout" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210517090939-0002/0/stderr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/app-20210517090939-0002/0/stdout" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +225,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/main/scala/org/apache/spark/deploy/decisionmaking" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graphx-application" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
