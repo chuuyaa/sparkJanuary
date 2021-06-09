@@ -65,7 +65,6 @@ rem The launcher library prints the command to be executed in a single line suit
 rem executed by the batch interpreter. Soan  read all the output of the launcher into a variable.
 :gen
 set LAUNCHER_OUTPUT=%temp%\spark-class-launcher-output-%RANDOM%.txt
-echo "%LAUNCHER_OUTPUT%"
 rem SPARK-28302: %RANDOM% would return the same number if we call it instantly after last call,
 rem so we should make it sure to generate unique file to avoid process collision of writing into
 rem the same file concurrently.

@@ -725,10 +725,10 @@ private[spark] class SparkSubmit extends Logging {
 
 
 
-    logInfo(s"[CUYA TEST] the arguments before change:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
+    logInfo(s"[SOSC-LOGGING] initial args:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
 
     //sparkConf = tb.theBrainAnalyzing(sparkConf, clusterManager)
-    logInfo(s"[CUYA TEST] the arguments after change:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
+    logInfo(s"[SOSC-LOGGING] updated args:\n${Utils.redact(sparkConf.getAll.toMap).mkString("\n")}")
 
     // Let YARN know it's a pyspark app, so it distributes needed libraries.
     if (clusterManager == YARN) {

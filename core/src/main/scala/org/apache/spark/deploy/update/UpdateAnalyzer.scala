@@ -16,7 +16,7 @@ class UpdateUtil {
     // Assume we have different mode - client, cluster, yarn-client, yarn-cluster
     if (clusterManager == STANDALONE || clusterManager == YARN || clusterManager == MESOS || clusterManager == KUBERNETES){
       //set ...
-      println("the brain check if clustermanager == standalone, yarn, mesos, kubernetes")
+      println("[SOSC-LOGGING] the brain check if clustermanager == standalone, yarn, mesos, kubernetes")
       _conf.set("spark.driver.core", driverCores.toString)
         .set("spark.driver.memoryOverhead", overheadDriverMemory.toString+"g")
         .set("spark.driver.memory",driverMemory.toString+"g")
@@ -27,7 +27,7 @@ class UpdateUtil {
         .set("spark.default.parallelism", parallelism.toString)
     }
     if (clusterManager == LOCAL){
-      println("[CUYATEST] masuk clustermanager == local")
+      println("[SOSC-LOGGING] masuk clustermanager == local")
       //args.driverCores = "3"
       _conf.set("spark.driver.cores", "2")
     }
@@ -45,7 +45,7 @@ class UpdateUtil {
   }
 
   def updateAnalyzer(args:SparkSubmitArguments)={
-    println("[CUYATEST] masuk updateAnalyzer")
+    println("[SOSC-LOGGING] masuk updateAnalyzer")
 
     val updatedArgs = new ArrayBuffer[String]()
     //val sparkConf = args.toSparkConf()
