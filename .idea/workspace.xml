@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9362b24a-041f-4087-b014-fd9d06beca70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/spark-class2.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/spark-class2.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/spark-defaults.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/spark-defaults.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/scala/org/apache/spark/deploy/SparkSubmit.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/org/apache/spark/deploy/SparkSubmit.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/scala/org/apache/spark/deploy/update/UpdateAnalyzer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/org/apache/spark/deploy/update/UpdateAnalyzer.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
