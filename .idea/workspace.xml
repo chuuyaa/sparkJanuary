@@ -7,8 +7,6 @@
     <list default="true" id="9362b24a-041f-4087-b014-fd9d06beca70" name="Default Changelist" comment="edit spark-defaults.conf syntax error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/spark-defaults.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/spark-defaults.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/spark-core_2.12 (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/spark-core_2.12 (1).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark-parent_2.12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-parent_2.12.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611996793531</updated>
-      <workItem from="1623659470891" duration="3369000" />
+      <workItem from="1623659470891" duration="4360000" />
     </task>
     <task id="LOCAL-00001" summary="change spark-defaults.conf">
       <created>1613486080895</created>
@@ -209,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623348364711</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="edit spark-defaults.conf syntax error">
+      <created>1623687023664</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623687023664</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +222,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
