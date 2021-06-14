@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9362b24a-041f-4087-b014-fd9d06beca70" name="Default Changelist" comment="" />
+    <list default="true" id="9362b24a-041f-4087-b014-fd9d06beca70" name="Default Changelist" comment="edit spark-defaults.conf syntax error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/spark-defaults.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/spark-defaults.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/spark-core_2.12 (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/spark-core_2.12 (1).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark-parent_2.12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark-parent_2.12.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +54,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../graphx-application" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -126,6 +137,7 @@
     <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="spark-core_2.12 (1)" />
       <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -153,6 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611996793531</updated>
+      <workItem from="1623659470891" duration="3369000" />
     </task>
     <task id="LOCAL-00001" summary="change spark-defaults.conf">
       <created>1613486080895</created>
@@ -198,6 +211,9 @@
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
